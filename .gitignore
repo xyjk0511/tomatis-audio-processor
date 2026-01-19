@@ -1,0 +1,4 @@
+*.flac
+*.wav
+__pycache__/
+*.log
