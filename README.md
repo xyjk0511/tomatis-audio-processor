@@ -109,7 +109,3 @@ python src/process_tomatis_adaptive.py -i input.flac -o output.flac
 ## 许可证
 
 MIT License
-
-## 作者
-
-DSP 分析工具
