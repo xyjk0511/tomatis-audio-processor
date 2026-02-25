@@ -1,7 +1,21 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git -C \"F:\\\\TOMATIS\" status)"
+      "Bash(git -C \"F:\\\\TOMATIS\" status)",
+      "Bash(Get-ChildItem -Recurse -Force)",
+      "Bash(Where-Object {$_PSIsContainer -eq $false})",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(conda activate:*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash($env:PYTHONIOENCODING='utf-8')",
+      "Bash(set:*)",
+      "Bash(dir:*)",
+      "Skill(docx)",
+      "Bash(pandoc:*)",
+      "Bash(pip install:*)",
+      "Bash(wc:*)"
     ]
   }
 }

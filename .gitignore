@@ -1,4 +1,35 @@
+# 临时文件
+tmpclaude-*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# 音频文件（太大）
 *.flac
 *.wav
-__pycache__/
+*.mp3
+
+# 分析结果
+analysis/
+*.csv
+*.png
 *.log
+*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
