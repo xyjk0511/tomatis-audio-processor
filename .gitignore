@@ -27,6 +27,7 @@ analysis/
 *.png
 *.log
 *.json
+!assets/*.png
 
 # IDE
 .vscode/
