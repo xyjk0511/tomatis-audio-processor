@@ -1,6 +1,11 @@
 # 临时文件
 tmpclaude-*
 
+# AI工具目录
+.claude/
+.codex/
+openspec/
+
 # Python
 __pycache__/
 *.py[cod]
