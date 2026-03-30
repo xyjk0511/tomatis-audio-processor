@@ -14,6 +14,8 @@
 | Technical stack | Python, NumPy, SciPy, SoundFile |
 | Project value | DSP experimentation, calibration, practical audio engineering |
 
+![Tomatis summary card](assets/summary-card.svg)
+
 A Python-based audio processing system inspired by Tomatis-style dynamic gated filtering, designed around signal-processing analysis, calibration, and practical experimentation.
 
 一个基于 Python 的 Tomatis 风格音频处理系统，核心是动态门控滤波、频域增益控制和面向真实音频实验的校准流程。

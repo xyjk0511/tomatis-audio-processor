@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <rect width="1200" height="320" fill="#f8fafc"/>
+  <rect x="24" y="24" width="1152" height="272" rx="20" fill="#ffffff" stroke="#fde68a" stroke-width="2"/>
+  <text x="48" y="72" font-size="34" font-family="Arial" font-weight="700" fill="#0f172a">Tomatis Audio Processor</text>
+  <text x="48" y="108" font-size="18" font-family="Arial" fill="#475569">Dynamic gating · tilt filtering · adaptive control · practical DSP workflow</text>
+  <rect x="48" y="138" width="250" height="118" rx="16" fill="#fefce8"/>
+  <text x="68" y="178" font-size="18" font-family="Arial" fill="#a16207">Modes</text>
+  <text x="68" y="225" font-size="28" font-family="Arial" font-weight="700" fill="#854d0e">Standard + Adaptive</text>
+  <rect x="328" y="138" width="230" height="118" rx="16" fill="#eff6ff"/>
+  <text x="348" y="178" font-size="18" font-family="Arial" fill="#1d4ed8">Core Method</text>
+  <text x="348" y="225" font-size="28" font-family="Arial" font-weight="700" fill="#1e3a8a">STFT + OLA</text>
+  <rect x="588" y="138" width="230" height="118" rx="16" fill="#f0fdf4"/>
+  <text x="608" y="178" font-size="18" font-family="Arial" fill="#15803d">Focus</text>
+  <text x="608" y="225" font-size="28" font-family="Arial" font-weight="700" fill="#166534">Signal Processing</text>
+  <rect x="848" y="138" width="280" height="118" rx="16" fill="#fff7ed"/>
+  <text x="868" y="178" font-size="18" font-family="Arial" fill="#c2410c">Project Value</text>
+  <text x="868" y="218" font-size="24" font-family="Arial" font-weight="700" fill="#9a3412">DSP + Calibration + Engineering</text>
+</svg>
