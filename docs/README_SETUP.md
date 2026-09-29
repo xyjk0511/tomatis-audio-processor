@@ -17,14 +17,14 @@ cd F:\TOMATIS
 
 ```powershell
 # 1. 安装 Miniconda 和 Python 环境
-.\setup_miniconda.ps1
+.\scripts\setup_miniconda.ps1
 
 # 2. 安装 FFmpeg
-.\setup_ffmpeg.ps1
+.\scripts\setup_ffmpeg.ps1
 
 # 3. 验证环境
 conda activate dsp
-python test_environment.py
+python src/test_environment.py
 ```
 
 ## 📝 安装后配置
@@ -39,7 +39,7 @@ python test_environment.py
 
 ```powershell
 conda activate dsp
-python test_environment.py
+python src/test_environment.py
 ```
 
 ## 🔧 常用命令
