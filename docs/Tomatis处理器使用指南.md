@@ -270,8 +270,8 @@ python src/process_tomatis.py -i "D MNF.flac" -o "output_gate60.flac" --gate_ui 
 
 ## 📚 相关文件
 
-- [process_tomatis.py](file:///F:/TOMATIS/process_tomatis.py) - 主处理脚本
-- [analyze_dbfs.py](file:///F:/TOMATIS/analyze_dbfs.py) - dBFS 分析（用于确定 gate 阈值）
+- [process_tomatis.py](file:///F:/TOMATIS/src/process_tomatis.py) - 主处理脚本
+- [analyze_dbfs.py](file:///F:/TOMATIS/src/analyze_dbfs.py) - dBFS 分析（用于确定 gate 阈值）
 - [常见问题和下一步.md](file:///F:/TOMATIS/常见问题和下一步.md) - 环境配置说明
 
 ---
@@ -280,7 +280,7 @@ python src/process_tomatis.py -i "D MNF.flac" -o "output_gate60.flac" --gate_ui 
 
 1. **分析原始音频**
    ```powershell
-   python analyze_dbfs.py
+   python src/analyze_dbfs.py
    ```
    查看 dBFS 范围，确定合适的 gate 值
 

@@ -113,7 +113,7 @@ y[n] = Σ y_k[n] / (Σ w²[n] + ε)
 
 **步骤 1**: 分析音频 dBFS 分布
 ```powershell
-python analyze_dbfs_simple.py -i "D MNF.flac"
+python src/analyze_dbfs_simple.py -i "D MNF.flac"
 ```
 
 **步骤 2**: 根据百分位数选择
@@ -291,7 +291,7 @@ ffmpeg -y -i output.wav -c:a flac -compression_level 8 output.flac
 
 ## 📚 相关文件
 
-- [process_tomatis.py](file:///F:/TOMATIS/process_tomatis.py) - 主处理脚本
-- [analyze_dbfs_simple.py](file:///F:/TOMATIS/analyze_dbfs_simple.py) - 快速 dBFS 分析
+- [process_tomatis.py](file:///F:/TOMATIS/src/process_tomatis.py) - 主处理脚本
+- [analyze_dbfs_simple.py](file:///F:/TOMATIS/src/analyze_dbfs_simple.py) - 快速 dBFS 分析
 - [Tomatis处理器使用指南.md](file:///F:/TOMATIS/Tomatis处理器使用指南.md) - 使用文档
 - [Tomatis快速测试.md](file:///F:/TOMATIS/Tomatis快速测试.md) - 测试场景

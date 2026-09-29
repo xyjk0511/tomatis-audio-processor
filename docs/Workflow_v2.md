@@ -8,11 +8,11 @@
 - 原始文件：`D MNF.flac`
 - 录音基准：`Tomatis_D.flac`
 - 脚本：
-  - `declick_inpaint.py`
-  - `calibrate_to_baseline_v2.py`
-  - `process_tomatis.py`
-  - `layer2_analyze_eq.py`
-  - `layer2b_apply_residual_eq_safe.py` (v2/SafeB 修正版)
+  - `src/declick_inpaint.py`
+  - `src/calibrate_to_baseline_v2.py`
+  - `src/process_tomatis.py`
+  - `src/layer2_analyze_eq.py`
+  - `src/layer2b_apply_residual_eq_safe.py` (v2/SafeB 修正版)
 
 ---
 
@@ -27,7 +27,7 @@ ffmpeg -y -ss 16.80 -i "Tomatis_D.flac" -t 1800 -ar 48000 -ac 2 -c:a flac -compr
 ### 2.2 去爆点 (De-click)
 消除录音中的物理“啪啪”声，防止干扰校准。
 ```powershell
-python declick_inpaint.py `
+python src/declick_inpaint.py `
   -i "Tomatis_D_30m.flac" `
   -o "Tomatis_D_30m_declick.flac" `
   --k 14 --pad_ms 1.5 --merge_gap_ms 0.5 --max_fix_ms 8
@@ -39,7 +39,7 @@ python declick_inpaint.py `
 
 运行 v2 脚本，分析动态差异，计算正确的 `gate_offset` 和 `gain_db`。
 ```powershell
-python calibrate_to_baseline_v2.py `
+python src/calibrate_to_baseline_v2.py `
   --orig "D MNF.flac" `
   --base "Tomatis_D_30m_declick.flac" `
   --max_minutes 6 `
@@ -58,7 +58,7 @@ python calibrate_to_baseline_v2.py `
 使用校准得到的参数应用到全长音频，生成动态匹配版本。
 ```powershell
 # 注意：gate_offset, hyst_db 填入上一步 calibration_v2.json 中的数值
-python process_tomatis.py `
+python src/process_tomatis.py `
   -i "D MNF.flac" `
   -o "D_MNF_matched_v2.flac" `
   --gate_ui 50 `

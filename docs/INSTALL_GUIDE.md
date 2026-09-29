@@ -147,7 +147,7 @@ ffmpeg -version
 
 ```powershell
 conda activate dsp
-python test_environment.py
+python src/test_environment.py
 ```
 
 如果所有测试通过，说明配置成功！
@@ -186,7 +186,7 @@ Get-ChildItem *.flac | ForEach-Object {
 ```powershell
 cd F:\TOMATIS
 conda activate dsp
-python test_environment.py
+python src/test_environment.py
 ```
 
 应该看到:
