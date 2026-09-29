@@ -31,7 +31,7 @@
 ```powershell
 conda activate dsp
 
-python process_tomatis.py `
+python src/process_tomatis.py `
   -i "D MNF.flac" `
   -o "D_MNF_processed.flac"
 ```
@@ -39,7 +39,7 @@ python process_tomatis.py `
 ### 带参数的完整示例
 
 ```powershell
-python process_tomatis.py `
+python src/process_tomatis.py `
   -i "D MNF.flac" `
   -o "D_MNF_tomatis.flac" `
   --gate_ui 50 `
@@ -244,7 +244,7 @@ ffmpeg -y -i output.wav -c:a flac -compression_level 8 output.flac
 # 批量处理多个文件
 Get-ChildItem *.flac | ForEach-Object {
     $outname = $_.BaseName + "_tomatis.flac"
-    python process_tomatis.py -i $_.Name -o $outname --gate_ui 50
+    python src/process_tomatis.py -i $_.Name -o $outname --gate_ui 50
 }
 ```
 
@@ -252,9 +252,9 @@ Get-ChildItem *.flac | ForEach-Object {
 
 ```powershell
 # 生成多个版本对比
-python process_tomatis.py -i "D MNF.flac" -o "output_gate40.flac" --gate_ui 40
-python process_tomatis.py -i "D MNF.flac" -o "output_gate50.flac" --gate_ui 50
-python process_tomatis.py -i "D MNF.flac" -o "output_gate60.flac" --gate_ui 60
+python src/process_tomatis.py -i "D MNF.flac" -o "output_gate40.flac" --gate_ui 40
+python src/process_tomatis.py -i "D MNF.flac" -o "output_gate50.flac" --gate_ui 50
+python src/process_tomatis.py -i "D MNF.flac" -o "output_gate60.flac" --gate_ui 60
 ```
 
 ### 校准 Gate 映射
@@ -286,7 +286,7 @@ python process_tomatis.py -i "D MNF.flac" -o "output_gate60.flac" --gate_ui 60
 
 2. **处理音频**
    ```powershell
-   python process_tomatis.py -i "D MNF.flac" -o "output.flac" --gate_ui 50 --state_csv "state.csv"
+   python src/process_tomatis.py -i "D MNF.flac" -o "output.flac" --gate_ui 50 --state_csv "state.csv"
    ```
 
 3. **验证结果**

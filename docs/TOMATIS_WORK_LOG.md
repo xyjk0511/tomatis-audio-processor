@@ -102,10 +102,10 @@ T_dBFS = -dynamic_range + dynamic_range * gate_ui / 100
 
 ```powershell
 # 使用对数百分比模式 (推荐)
-python process_tomatis.py -i input.flac -o output.flac --gate_ui 50
+python src/process_tomatis.py -i input.flac -o output.flac --gate_ui 50
 
 # 完整参数
-python process_tomatis.py -i input.flac -o output.flac \
+python src/process_tomatis.py -i input.flac -o output.flac \
     --gate_ui 50 \
     --gate_mode log_percent \
     --dynamic_range 80 \

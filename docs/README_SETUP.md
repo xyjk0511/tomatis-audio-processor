@@ -8,7 +8,7 @@
 
 ```powershell
 cd F:\TOMATIS
-.\quick_setup.ps1
+.\scripts\quick_setup.ps1
 ```
 
 这将自动安装 Miniconda、Python 环境和 FFmpeg。
